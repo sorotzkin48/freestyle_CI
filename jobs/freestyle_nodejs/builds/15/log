@@ -1,0 +1,33 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freestyle_nodejs
+The recommended git tool is: NONE
+using credential 2ee5c4be-bb8d-4318-9862-50958e1216a7
+Cloning the remote Git repository
+Cloning repository git@github.com:sorotzkin48/freestyle_CI.git
+ > git init /var/jenkins_home/workspace/freestyle_nodejs # timeout=10
+Fetching upstream changes from git@github.com:sorotzkin48/freestyle_CI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:sorotzkin48/freestyle_CI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:sorotzkin48/freestyle_CI.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision d1a8e2146e3d9a4e6b84d89ba0112358d441027d (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d1a8e2146e3d9a4e6b84d89ba0112358d441027d # timeout=10
+Commit message: "adding a commit"
+ > git rev-list --no-walk bc9be30246f7ac10ee4ae7e836ba16133af61d8e # timeout=10
+[freestyle_nodejs] $ /bin/sh -xe /tmp/jenkins8583882099027484031.sh
++ git clone https://github.com/EfratGrinboom/freestyle_CI
+Cloning into 'freestyle_CI'...
++ docker-compose build
+no configuration file provided: not found
+Build step 'Execute shell' marked build as failure
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: FAILURE

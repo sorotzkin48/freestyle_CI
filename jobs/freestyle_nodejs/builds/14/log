@@ -1,0 +1,32 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freestyle_nodejs
+The recommended git tool is: NONE
+using credential 2ee5c4be-bb8d-4318-9862-50958e1216a7
+Cloning the remote Git repository
+Cloning repository git@github.com:sorotzkin48/freestyle_CI.git
+ > git init /var/jenkins_home/workspace/freestyle_nodejs # timeout=10
+Fetching upstream changes from git@github.com:sorotzkin48/freestyle_CI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:sorotzkin48/freestyle_CI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:sorotzkin48/freestyle_CI.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision bc9be30246f7ac10ee4ae7e836ba16133af61d8e (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f bc9be30246f7ac10ee4ae7e836ba16133af61d8e # timeout=10
+Commit message: "another one"
+ > git rev-list --no-walk 6b006d31c6b81f2f192b5f4df8ae84ed36384ba3 # timeout=10
+[freestyle_nodejs] $ /bin/sh -xe /tmp/jenkins8027427294335012811.sh
++ bash
++ rm -rf config.xml copy_reference_file.log durable-task.jpi freestyle_CI hudson.model.UpdateCenter.xml hudson.plugins.emailext.ExtendedEmailPublisher.xml hudson.plugins.git.GitTool.xml identity.key.enc jenkins.install.InstallUtil.lastExecVersion jenkins.install.UpgradeWizard.state jenkins.model.JenkinsLocationConfiguration.xml jenkins.telemetry.Correlator.xml jenkins_vol lib-durable-task-40.vc66cf8fb_4613.jar nodeMonitors.xml plugins queue.xml queue.xml.bak secret.key secret.key.not-so-secret secrets updates userContent users war
++ echo hello this is my first CI!
+hello this is my first CI!
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: SUCCESS

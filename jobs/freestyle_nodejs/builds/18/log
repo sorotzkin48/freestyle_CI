@@ -1,0 +1,57 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freestyle_nodejs
+The recommended git tool is: NONE
+using credential 2ee5c4be-bb8d-4318-9862-50958e1216a7
+Cloning the remote Git repository
+Cloning repository git@github.com:sorotzkin48/freestyle_CI.git
+ > git init /var/jenkins_home/workspace/freestyle_nodejs # timeout=10
+Fetching upstream changes from git@github.com:sorotzkin48/freestyle_CI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:sorotzkin48/freestyle_CI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+FATAL: Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "java.lang.Exception.getMessage()" is null
+java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because the return value of "java.lang.Exception.getMessage()" is null
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandIn(CliGitAPIImpl.java:2848)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.launchCommandWithCredentials(CliGitAPIImpl.java:2185)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$1.execute(CliGitAPIImpl.java:635)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl$2.execute(CliGitAPIImpl.java:871)
+	at hudson.plugins.git.GitSCM.retrieveChanges(GitSCM.java:1222)
+	at hudson.plugins.git.GitSCM.checkout(GitSCM.java:1305)
+	at hudson.scm.SCM.checkout(SCM.java:540)
+	at hudson.model.AbstractProject.checkout(AbstractProject.java:1245)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.defaultCheckout(AbstractBuild.java:649)
+	at jenkins.scm.SCMCheckoutStrategy.checkout(SCMCheckoutStrategy.java:85)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:521)
+	at hudson.model.Run.execute(Run.java:1900)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+[WS-CLEANUP] Deleting project workspace...
+ERROR: Cannot delete workspace :Jenkins.instance is missing. Read the documentation of Jenkins.getInstanceOrNull to see what you are doing wrong.
+ERROR: Post-build steps failed
+java.lang.IllegalStateException: Jenkins.instance is missing. Read the documentation of Jenkins.getInstanceOrNull to see what you are doing wrong.
+	at jenkins.model.Jenkins.get(Jenkins.java:816)
+	at hudson.tasks.Publisher.getDescriptor(Publisher.java:125)
+	at hudson.tasks.Notifier.getDescriptor(Notifier.java:54)
+	at hudson.tasks.Notifier.getDescriptor(Notifier.java:48)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.reportError(AbstractBuild.java:786)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:775)
+	at hudson.model.Build$BuildExecution.cleanUp(Build.java:189)
+	at hudson.model.Run.execute(Run.java:1947)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+FATAL: Jenkins.instance is missing. Read the documentation of Jenkins.getInstanceOrNull to see what you are doing wrong.
+java.lang.IllegalStateException: Jenkins.instance is missing. Read the documentation of Jenkins.getInstanceOrNull to see what you are doing wrong.
+	at jenkins.model.Jenkins.get(Jenkins.java:816)
+	at hudson.tasks.BuildTrigger.execute(BuildTrigger.java:274)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.cleanUp(AbstractBuild.java:728)
+	at hudson.model.Build$BuildExecution.cleanUp(Build.java:194)
+	at hudson.model.Run.execute(Run.java:1947)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+Finished: FAILURE

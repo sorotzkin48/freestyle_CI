@@ -1,0 +1,33 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freestyle_nodejs
+The recommended git tool is: NONE
+using credential 2ee5c4be-bb8d-4318-9862-50958e1216a7
+Cloning the remote Git repository
+Cloning repository git@github.com:sorotzkin48/freestyle_CI.git
+ > git init /var/jenkins_home/workspace/freestyle_nodejs # timeout=10
+Fetching upstream changes from git@github.com:sorotzkin48/freestyle_CI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:sorotzkin48/freestyle_CI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:sorotzkin48/freestyle_CI.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 6b006d31c6b81f2f192b5f4df8ae84ed36384ba3 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 6b006d31c6b81f2f192b5f4df8ae84ed36384ba3 # timeout=10
+Commit message: "commit message"
+ > git rev-list --no-walk b632c4ac4f5c2e761c65172be9ba3a93e0e5d103 # timeout=10
+First time build. Skipping changelog.
+[freestyle_nodejs] $ /bin/sh -xe /tmp/jenkins4395932459772955302.sh
++ bash
++ rm -rf config.xml copy_reference_file.log durable-task.jpi freestyle_CI hudson.model.UpdateCenter.xml hudson.plugins.emailext.ExtendedEmailPublisher.xml hudson.plugins.git.GitTool.xml identity.key.enc jenkins.install.InstallUtil.lastExecVersion jenkins.install.UpgradeWizard.state jenkins.model.JenkinsLocationConfiguration.xml jenkins.telemetry.Correlator.xml jenkins_vol lib-durable-task-40.vc66cf8fb_4613.jar nodeMonitors.xml plugins queue.xml queue.xml.bak secret.key secret.key.not-so-secret secrets updates userContent users war
++ echo hello this is my first CI!
+hello this is my first CI!
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: SUCCESS

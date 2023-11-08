@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-10-31 14:05:49.430 UTC</timestamp>
+  <md5sum>d7509c5d837f353536663f6b66c59fd4</md5sum>
+  <fileName>Credential id=2ee5c4be-bb8d-4318-9862-50958e1216a7 name=chayashpitzer@gmail.com</fileName>
+  <usages>
+    <entry>
+      <string>freestyle_nodejs</string>
+      <ranges>9-18</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

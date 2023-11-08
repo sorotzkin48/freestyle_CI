@@ -1,0 +1,20 @@
+commit bc9be30246f7ac10ee4ae7e836ba16133af61d8e
+tree 2ebf45ee4e8bd62bbf42108c0937d692306ece9d
+parent 050ffde0facadcafa4243d4de7ef6857dc2a2002
+author sorotzkin48 <chayashpitzer@gmail.com> 2023-11-01 10:00:05 +0200
+committer sorotzkin48 <chayashpitzer@gmail.com> 2023-11-01 10:00:05 +0200
+
+    another one
+
+
+:100644 100644 87ad2d3bb14efccfd555b844cbc115055a4e0253 a5716d3a5d86a2741755e92d790a01bde6459d56 M	war/css/loading.css
+commit 050ffde0facadcafa4243d4de7ef6857dc2a2002
+tree 62be43cf7df3f2b9ebc520578fa132b3dce9c32e
+parent 6b006d31c6b81f2f192b5f4df8ae84ed36384ba3
+author sorotzkin48 <chayashpitzer@gmail.com> 2023-11-01 09:53:28 +0200
+committer sorotzkin48 <chayashpitzer@gmail.com> 2023-11-01 09:53:28 +0200
+
+    another commit
+
+
+:100644 100644 f3d61b18c3603cec8db4d401e10a590c7fb7b95d 87ad2d3bb14efccfd555b844cbc115055a4e0253 M	war/css/loading.css

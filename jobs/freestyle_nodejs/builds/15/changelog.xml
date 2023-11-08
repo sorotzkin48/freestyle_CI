@@ -1,0 +1,10 @@
+commit d1a8e2146e3d9a4e6b84d89ba0112358d441027d
+tree 1e2e5ba5fd2a1d743bbf65f474834e001fc6b0a7
+parent bc9be30246f7ac10ee4ae7e836ba16133af61d8e
+author sorotzkin48 <chayashpitzer@gmail.com> 2023-11-06 13:40:35 +0200
+committer sorotzkin48 <chayashpitzer@gmail.com> 2023-11-06 13:40:35 +0200
+
+    adding a commit
+
+
+:100644 100644 a5716d3a5d86a2741755e92d790a01bde6459d56 134d4690728b6143e00115ec72e2103f59b7bb95 M	war/css/loading.css

@@ -1,0 +1,20 @@
+commit 41b37700908712acf9b204d9061a2ed4ad09fa19
+tree 45d320491c149286ccb431f905b54ac9c9d54726
+parent 6ebef06b97320e6c70692b8db5f79a2765f2ec8c
+author sorotzkin48 <chayashpitzer@gmail.com> 2023-11-06 14:49:49 +0200
+committer sorotzkin48 <chayashpitzer@gmail.com> 2023-11-06 14:49:49 +0200
+
+    files order changed
+
+
+:000000 100644 0000000000000000000000000000000000000000 26ee59f11c6d5bd75be2955dd7f562717b91c61c A	docker-compose.yml
+commit 6ebef06b97320e6c70692b8db5f79a2765f2ec8c
+tree 1e2e5ba5fd2a1d743bbf65f474834e001fc6b0a7
+parent 2cd359db8367502ee1a70f44c6a15c0d0e57f520
+author sorotzkin48 <chayashpitzer@gmail.com> 2023-11-06 14:44:08 +0200
+committer sorotzkin48 <chayashpitzer@gmail.com> 2023-11-06 14:44:08 +0200
+
+    changed files hierarchy
+
+
+:100644 000000 26ee59f11c6d5bd75be2955dd7f562717b91c61c 0000000000000000000000000000000000000000 D	docker-compose.yml

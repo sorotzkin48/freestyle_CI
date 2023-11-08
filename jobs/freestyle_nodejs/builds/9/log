@@ -1,0 +1,32 @@
+Started by user [8mha:////4GET+NbyyGuzhZL5lUYNyVgivWsopK1mOueB6Bis4QidAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL99KLSvEwAJARLUcAAAAA=[0mgrunitech
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freestyle_nodejs
+The recommended git tool is: NONE
+using credential 2ee5c4be-bb8d-4318-9862-50958e1216a7
+Cloning the remote Git repository
+Cloning repository git@github.com:sorotzkin48/freestyle_CI.git
+ > git init /var/jenkins_home/workspace/freestyle_nodejs # timeout=10
+Fetching upstream changes from git@github.com:sorotzkin48/freestyle_CI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:sorotzkin48/freestyle_CI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:sorotzkin48/freestyle_CI.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision b632c4ac4f5c2e761c65172be9ba3a93e0e5d103 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b632c4ac4f5c2e761c65172be9ba3a93e0e5d103 # timeout=10
+Commit message: "initial commit"
+First time build. Skipping changelog.
+[freestyle_nodejs] $ /bin/sh -xe /tmp/jenkins1146184815062053216.sh
++ bash
++ rm -rf docker-compose.yml nodejsApp
++ echo hello this is my first CI!
+hello this is my first CI!
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: SUCCESS

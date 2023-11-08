@@ -1,0 +1,33 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/freestyle_nodejs
+The recommended git tool is: NONE
+using credential 2ee5c4be-bb8d-4318-9862-50958e1216a7
+Cloning the remote Git repository
+Cloning repository git@github.com:sorotzkin48/freestyle_CI.git
+ > git init /var/jenkins_home/workspace/freestyle_nodejs # timeout=10
+Fetching upstream changes from git@github.com:sorotzkin48/freestyle_CI.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.39.2'
+using GIT_SSH to set credentials 
+Verifying host key using known hosts file
+ > git fetch --tags --force --progress -- git@github.com:sorotzkin48/freestyle_CI.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:sorotzkin48/freestyle_CI.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+Avoid second fetch
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+Checking out Revision 41b37700908712acf9b204d9061a2ed4ad09fa19 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 41b37700908712acf9b204d9061a2ed4ad09fa19 # timeout=10
+Commit message: "files order changed"
+ > git rev-list --no-walk 2cd359db8367502ee1a70f44c6a15c0d0e57f520 # timeout=10
+[freestyle_nodejs] $ /bin/sh -xe /tmp/jenkins10688785938178546639.sh
++ git clone https://github.com/EfratGrinboom/freestyle_CI
+Cloning into 'freestyle_CI'...
++ docker-compose build
+unable to prepare context: path "/var/jenkins_home/workspace/freestyle_nodejs/nodejsApp" not found
+Build step 'Execute shell' marked build as failure
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+Finished: FAILURE
